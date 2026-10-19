@@ -1,6 +1,6 @@
+catboost
 streamlit
-joblib
 pandas
 requests
-scikit-learn
-catboost
+scikit-learn==1.6.1
+joblib==1.6.0
