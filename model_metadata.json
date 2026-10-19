@@ -1,0 +1,27 @@
+{
+  "model_name": "Random Forest (class-balanced)",
+  "target_column": "Irrigation Level",
+  "feature_columns_in_required_order": [
+    "Temperature",
+    "Humidity",
+    "Soil Moisture Percentage",
+    "RawLDR"
+  ],
+  "classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "test_metrics": {
+    "Model": "Random Forest (class-balanced)",
+    "Accuracy": 1.0,
+    "Balanced_Accuracy": 1.0,
+    "Precision_macro": 1.0,
+    "Recall_macro": 1.0,
+    "F1_macro": 1.0
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "label_method": "Rule-based labels using soil moisture, temperature and light; verify against real field observations.",
+  "deployment_warning": "Do not use as an autonomous pump controller until sensor calibration and independent field validation are completed."
+}
