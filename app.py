@@ -16,8 +16,8 @@ MODEL_PATH = Path("best_irrigation_model.joblib")
 META_PATH = Path("model_metadata.json")
 
 # Store these values in Streamlit Secrets, not in public code.
-CHANNEL_ID = st.secrets["3387307"]
-READ_API_KEY = st.secrets.get("ILLMWZRMTT019ZK8", "")
+CHANNEL_ID = str(st.secrets["THINGSPEAK_CHANNEL_ID"])
+READ_API_KEY = st.secrets.get("THINGSPEAK_READ_API_KEY", "")
 
 FIELD_MAP = {
     "Temperature": "field1",
