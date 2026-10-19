@@ -1,6 +1,6 @@
-
 streamlit
 joblib
 pandas
 requests
 scikit-learn
+catboost
